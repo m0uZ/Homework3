@@ -1,15 +1,15 @@
 ﻿Console.Write("Введите число: ");
-int a = int.Parse(Console.ReadLine());
-int b = a;
-double c = Math.Abs(Math.Pow(a, 2));
+int number = int.Parse(Console.ReadLine());
+int count = number;
+double sum = Math.Abs(Math.Pow(number, 2));
 
-while (b != 0)
+while (count != 0)
 {
     Console.Write("Введите число: ");
-    a = int.Parse(Console.ReadLine());
-    b += a;
-    c = c + Math.Abs(Math.Pow(a, 2));
-    if (b == 0)
+    number = int.Parse(Console.ReadLine());
+    count += number;
+    sum += Math.Abs(Math.Pow(number, 2));
+    if (count == 0)
     break;
 }
-Console.WriteLine(c);
+Console.WriteLine(sum);
